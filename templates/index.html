@@ -1,0 +1,45 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Scanner</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>API Vulnerability Scanner</h1>
+
+        <form id="scanForm">
+            <label>API URL:</label>
+            <input type="url" id="api_url" placeholder="https://example.com" required>
+
+            <label>Auth Type:</label>
+            <select id="auth_type">
+                <option value="none">None</option>
+                <option value="token">Token</option>
+            </select>
+
+            <label>Auth Token:</label>
+            <input type="text" id="auth_token" placeholder="Enter token if any">
+
+            <label>Scan Type:</label>
+            <select id="scan_type">
+                <option value="xss">XSS</option>
+                <option value="sqli">SQL Injection</option>
+                <option value="lfi">LFI</option>
+                <option value="rce">RCE</option>
+            </select>
+
+            <button type="submit">Scan</button>
+        </form>
+
+        <div id="result">
+            <!-- هنا هتظهر النتيجة -->
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

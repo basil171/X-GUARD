@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(-45deg, #0f0c29, #302b63, #24243e, #0f0c29);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #0ff;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    max-inline-size: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0ff;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+
+input, select, button {
+    inline-size: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background: #0ff;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result p {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-block-size: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    inline-size: 100%;
+    max-inline-size: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-block-end: 20px;
+}
+
+form label {
+    display: block;
+    margin-block-start: 10px;
+    font-weight: bold;
+}
+
+form input, form select {
+    inline-size: 100%;
+    padding: 8px;
+    margin-block-start: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    inline-size: 100%;
+    padding: 10px;
+    margin-block-start: 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-block-start: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
